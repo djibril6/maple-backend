@@ -6,8 +6,7 @@
   "scripts": {
     "start": "pm2 start ecosystem.config.json --no-daemon",
     "dev": "cross-env NODE_ENV=development nodemon src/index.ts",
-    "build": "tsc -b . && npm run copy-static-assets",
-    "copy-static-assets": "ts-node copyStaticAssets.ts",
+    "build": "tsc -b .",
     "test": "jest -i --colors --verbose --detectOpenHandles",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
